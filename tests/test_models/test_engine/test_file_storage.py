@@ -10,6 +10,6 @@ import os
 
 class TestAttr(unittest.TestCase):
     """This class provides tests with attributes of the class FilesStorage"""
-
+         
 if __name__ == '__main__':
     unittest.main()
