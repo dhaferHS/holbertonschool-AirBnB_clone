@@ -14,7 +14,9 @@ from models import storage
 
 class HBNBCommand(cmd.Cmd):
     """class HBNBCommand"""
-    
+    prompt = "(hbnb) "
+    classes = ["BaseModel"]
+
     def do_quit(self, arg):
         """Quit command to exit the program"""
         sys.exit()
@@ -27,5 +29,6 @@ class HBNBCommand(cmd.Cmd):
         """Empty line command"""
         pass
 
+ 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
