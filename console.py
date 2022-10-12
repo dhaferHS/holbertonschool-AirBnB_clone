@@ -4,7 +4,7 @@
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
 from datetime import datetime
-from models.user import user
+from models.user import User
 from models import storage
 import models
 import json
