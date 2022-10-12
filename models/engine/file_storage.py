@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """import modules"""
 import json
-from models.base_model import BaseModel
 import os
+from models.base_model import BaseModel
+from models.user import user
 
 
 
@@ -37,9 +38,7 @@ class FileStorage:
             json.dump(dict, f)
 
     def reload(self):
-        """
-            deserializes the JSON file to __objects
-        """
+        """deserializes the JSON file to __objects"""
         if os.path.exists(self.__file_path) is True:
             with open(self.__file_path, "r", encoding="utf-8") as fd:
                 dictj = json.load(fd)
