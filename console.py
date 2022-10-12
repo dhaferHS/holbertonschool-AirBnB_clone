@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """import modules"""
+
+from models import storage
+from models.base_model import BaseModel
+from models.engine.file_storage import FileStorage
+import models
+import json
 import cmd
 import sys
-from models.base_model import BaseModel
-import models
-from models.engine.file_storage import FileStorage
-import json
-from models import storage
-
+import os
 
 """HBNB Command class file"""
 
