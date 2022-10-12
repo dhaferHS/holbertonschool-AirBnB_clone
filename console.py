@@ -6,6 +6,7 @@ from models.base_model import BaseModel
 from datetime import datetime
 from models.user import user
 from models import storage
+import models
 import cmd
 import sys
 
