@@ -4,6 +4,7 @@
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
 from datetime import datetime
+from models.user import user
 from models import storage
 import cmd
 import sys
