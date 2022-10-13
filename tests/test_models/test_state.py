@@ -15,7 +15,7 @@ class TestState(unittest.TestCase):
         s = State()
         self.assertEqual(s.name, '')
         s.name = 'dhafer'
-        self.assertEqual(s.name, 'dhafer')
+        self.assertEqual(s.name, 'nabeul')
         self.assertTrue(hasattr(s, 'id'))
         self.assertTrue(hasattr(s, 'created_at'))
         self.assertTrue(hasattr(s, 'updated_at'))
