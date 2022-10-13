@@ -97,66 +97,6 @@ Using "load" for making a file Python
 5. Open the file Json
 6. Using "load" for creating the dictionary file to read as Python data type
 ```
-* __How to manage `datetime` ?__<br>
-The datetime module supplies classes for manipulating dates and times
-1. from datetime import datetime : A combination of a date and a time. Attributes: year, month, day, hour, minute, second, microsecond, and tzinfo
-2. To initialize the instance attributes ("created_at" and "updated_at") as `datetime.now()`
-```
-datetime.datetime(2017, 9, 28, 21, 5, 54, 119434)
-
-```
-3. isoformat() : DATE and TIME -> String
-```
-   isoformat() = Return a string representing the date in ISO 8601 format, YYYY-MM-DD:
-   
-   ex) 
-   import datetime
-
-   dt = datetime.datetime(2018, 12, 31, 5, 0, 30, 1000)
-   print(d)
-   # 2018-12-31 05:00:30.001000
-
-   print(type(d))
-   # <class 'datetime.datetime'>
-   
-   print(d.isoformat())
-   # 2018-12-31T05:00:30.001000
-   
-   print(type(d.isoformat()))
-   # <class 'str'>
-   
-```
-4. fromisoformat() : String -> DATE and TIME
-```
-ex)
-import datetime
-
-s = '2018-12-31T05:00:30.001000'
-dt = datetime.datetime.fromisoformat(s)
-
-print(dt)
-# 2018-12-31 05:00:30.001000
-
-print(type(dt))
-# <class 'datetime.datetime'>
-
-print(datetime.datetime.fromisoformat('2018-12-31x05:00:30.001000'))
-# 2018-12-31 05:00:30.001000
-
-# print(datetime.datetime.fromisoformat('2018-12-31xx05:00:30.001000'))
-# ValueError: Invalid isoformat string: '2018-12-31xx05:00:30.001000'
-
-```
-
-5. To be converted from string to date time object:
-```
-   strptime() = String to date and time conversion
-
-  ex) datetime.datetime(2017, 9, 28, 21, 5, 54, 119572)
-  -> datetime.strptime("%Y-%m-%dT%H:%M:%S.%f")
-  ->'2017-09-28T21:05:54.119572'
-  
-```
 
 * __What is an `UUID` ?__
 ```
