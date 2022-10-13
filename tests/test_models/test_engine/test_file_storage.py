@@ -2,6 +2,7 @@
 """unit tests for FileStorage class"""
 
 import unittest
+import os
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
 
@@ -41,7 +42,7 @@ class FileStorageTests(unittest.TestCase):
 
     def test_all(self):
         """
-        Method for testing functionality of the all() method
+        Method for testing functionality of the all method
         of the FileStorage class.
         """
         self.assertIsNotNone(self.fs1.all())
@@ -50,27 +51,29 @@ class FileStorageTests(unittest.TestCase):
         key = f'BaseModel.{self.bm1.id}'
         self.assertIsNotNone(self.fs1.all(), {key: self.bm1})
 
+    def test_all(self):
+        """Tests if all() returns a dictionary"""
+
+        storage = FileStorage()
+        self.assertIsInstance(storage.all(), dict)
+
     def test_new(self):
-        """
-        Method for testing functionality of the new() method
-        of the FileStorage class.
-        """
-        pass
+        """Tests if new updates the private dictionary __objects
+           accessed with all with a created BaseModel instance"""
+
+        storage = FileStorage()
+        my_model = BaseModel()
+        objects = storage.all()
+        self.assertTrue(my_model in objects.values())
 
     def test_save(self):
-        """
-        Method for testing functionality of the save() method
-        of the FileStorage class.
-        """
-        pass # FIXME:
+        """Tests if save creates a JSON file if it doesn't exist"""
 
-    def test_reload(self):
-        """
-        Method for testing functionality of the reload() method
-        of the FileStorage class.
-        """
-        pass # FIXME:
+        storage = FileStorage()
+        storage.save()
+        self.assertTrue(exists(TestFileStorage.__file_path))
 
+    
          
 if __name__ == '__main__':
     unittest.main()
