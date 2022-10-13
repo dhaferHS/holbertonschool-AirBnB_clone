@@ -26,7 +26,7 @@
 
 ### What’s a command interpreter?
 
- * Create a new object (ex: a new User or a new State)
+ * Create a new object (ex: a new User or a new Place)
  * Retrieve an object from a file, a database etc…
  * Do operations on objects (count, compute stats, etc…)
  * Update attributes of an object
@@ -34,7 +34,6 @@
 
 ### __Resources__
 
-* Python abstract classes
 * cmd module
 * Packages concept page
 * uuid module
