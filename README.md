@@ -274,12 +274,9 @@ prompt : (hbnb)
 ### Some examples of the command interpreter
 show:
 
-
 destroy:
 
-
 city:
-
 
 ### More Classes
 
