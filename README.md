@@ -273,13 +273,13 @@ prompt : (hbnb)
 
 ### Some examples of the command interpreter
 show:
-![image](https://user-images.githubusercontent.com/98317357/177001366-bf3efca3-0a7e-4721-9b30-dd59797806d6.png)
+
 
 destroy:
-![image](https://user-images.githubusercontent.com/98317357/177001454-ce5114c3-29e2-4cf5-b5b9-735eca47150d.png)
+
 
 city:
-![image](https://user-images.githubusercontent.com/98317357/177001612-735440c2-ab0a-4919-ba91-f7e68736a76d.png)
+
 
 ### More Classes
 
