@@ -54,7 +54,7 @@ First, we create a directory and give it a package name, preferably related to i
 ```
 1. import cmd
 2. create class HBNBCommand(cmd.Cmd)
-3. set the prompt as "(hbnb) "
+3. set a prompt as "(hbnb) "
 4. create the commands with module "def do_ANYTHING"
 5. At the end of the file,
 if __name__ == '__main__':
