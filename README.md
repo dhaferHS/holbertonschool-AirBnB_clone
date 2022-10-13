@@ -290,7 +290,7 @@ city:
 | Place                                                  | city_id<br>user_id<br>name<br>description<br>number_rooms<br>number_bathrooms<br>max_guest<br> price_by_night<br>latitude<br>longitude<br>amenity_ids             |
 | Review                                      | place_id<br>user_id<br>text           |
 
-## :couple: About us ##
+##  About us 
 This is one of Holberton School tunisia projects was made  in the 9 october 2022.<br>
 If you have a question or a comment, please contact me.<br>
 Dhafer Hamza Sfaxi <5037@holbertonstudents.com>
