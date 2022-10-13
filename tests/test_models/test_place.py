@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Unittest module for Place"""
 import unittest
+import pycodestyle
+from datetime import datetime
 from models.base_model import BaseModel
 from models.city import City
 from models.place import Place
