@@ -14,7 +14,7 @@ class TestState(unittest.TestCase):
         """test the creation of an instance"""
         s = State()
         self.assertEqual(s.name, '')
-        s.name = 'dhafer'
+        s.name = 'nabeul'
         self.assertEqual(s.name, 'nabeul')
         self.assertTrue(hasattr(s, 'id'))
         self.assertTrue(hasattr(s, 'created_at'))
