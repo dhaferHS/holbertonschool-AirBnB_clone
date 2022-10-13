@@ -12,22 +12,7 @@ class FileStorageTests(unittest.TestCase):
     Class FileStorageTests that provides unit testing for the
     `FileStorage` class.
     """
-    def setUp(cls):
-        """
-        Method to set up FileStorage classes for use during testing.
-        """
-        cls.fs1 = FileStorage()
-        cls.fs2 = FileStorage()
-        cls.bm1 = BaseModel()
-
-    def tearDown(cls):
-        """
-        Method to tear down FileStorage classes for use during testing.
-        """
-        del cls.fs1
-        del cls.fs2
-        del cls.bm1
-        return super().tearDown()
+    
 
     def test_init(self):
         """
