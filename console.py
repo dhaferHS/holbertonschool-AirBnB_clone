@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 """import modules"""
 
-from models.engine.file_storage import FileStorage
-from models.base_model import BaseModel
+
 from datetime import datetime
-from models.user import User
-from models import storage
-import models
+
+
 import json
 import cmd
 import sys
@@ -17,8 +15,11 @@ import sys
 
 class HBNBCommand(cmd.Cmd):
     """class HBNBCommand"""
+    
+
     prompt = "(hbnb) "
-    classes = ["BaseModel", "User"]
+    classes = ["BaseModel", "User", "State", "City",
+               "Amenity", "Place", "Review"]
 
     def do_quit(self, arg):
         """Quit command to exit the program"""
