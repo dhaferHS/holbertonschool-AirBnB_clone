@@ -53,9 +53,9 @@ First, we create a directory and give it a package name, preferably related to i
 1. import cmd
 2. create class HBNBCommand(cmd.Cmd)
 3. set the prompt as "(hbnb) "
-4. create the commands with module "def do_XXX"
-5. At the end of file,<br>
-if __name__ == '__main__':<br>
+4. create the commands with module "def do_ANYTHING"
+5. At the end of the file,
+if __name__ == '__main__':
     HBNBCommand().cmdloop()
 ```
 * __What is Unit testing and how to implement it in a large project ?__
