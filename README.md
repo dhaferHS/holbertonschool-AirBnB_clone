@@ -61,6 +61,7 @@ Deserialization
 * A database or files that store data (data = objects)
 * An API (Application programming interface) that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
 
+
 ## Step 1: Write a command interpreter to manage your AirBnB objects
 
  * To implement the parent class "BaseModel".
