@@ -69,10 +69,7 @@ What is serialize and deserialize a Class?
 ```
 <class 'BaseModel'> -> to_dict() -> <class 'dict'> -> <class 'BaseModel'>
 ```
-the flow of serialization-deserialization will be:
-```
-<class 'BaseModel'> -> to_dict() -> <class 'dict'> -> JSON dump -> <class 'str'> -> FILE -> <class 'str'> -> JSON load -> <class 'dict'> -> <class 'BaseModel'>
-```
+
 1. we can recreate a BaseModel from another one by using a dictionary representation
 2. Convert the dictionary representation to a JSON string in order to reading for us, like humains.
 
