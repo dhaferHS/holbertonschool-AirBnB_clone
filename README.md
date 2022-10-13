@@ -158,9 +158,9 @@ print(datetime.datetime.fromisoformat('2018-12-31x05:00:30.001000'))
 
 * __What is an `UUID` ?__
 ```
-When you want a unique ID, you should call uuid1() or uuid4().<br>
-uuid1(): may compromise privacy since it creates a UUID containing the computer’s network address<br>
-uuid4(): creates a random UUID<br>
+When you want a unique ID, you should call uuid1() or uuid4().
+uuid1(): may compromise privacy since it creates a UUID containing the computer’s network address
+uuid4(): creates a random UUID
 str(uuid) returns a string in the form 12345678-1234-5678-1234-567812345678 where the 32 hexadecimal digits represent the UUID
 ```
 
