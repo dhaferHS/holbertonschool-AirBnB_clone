@@ -8,54 +8,7 @@
 - manage (create, update, destroy, etc) objects via a console / command interpreter
 - store and persist objects to a file (JSON file)
 
-```
-File and Difrectories
-```
-- models directory will contain all classes used for the entire project. A class, called “model” in a OOP project is the representation of an object/instance.
-- tests directory will contain all unit tests.
-- console.py file is the entry point of our command interpreter.
-- models/base_model.py file is the base class of all our models. It contains common elements:
-- attributes: id, created_at and updated_at
-- methods: save() and to_json()
-- models/engine directory will contain all storage classes (using the same prototype). For the moment you will have only one: file_storage.py.
-```
-### Storage
-```
-- How can I store my instances?
-class Student():
-    def __init__(self, name):
-        self.name = name
 
-students = []
-s = Student("John")
-students.append(s)
-```
-Here, I’m creating a student and store it in a list. But after this program execution, my Student instance doesn’t exist anymore
-```
-class Student():
-    def __init__(self, name):
-        self.name = name
-
-students = reload() # recreate the list of Student objects from a file
-s = Student("John")
-students.append(s)
-save(students) # save all Student objects to a file
-```
-### File storage == JSON serialization
-
-Serialization
-```
-1. my_instance.to_json() : to retrieve a dictionary
-2. Convert an instance to Python built in serializable data structure (list, dict, number and string) 
-3. my_string = JSON.dumps(my_dict): write this string to a file on disk
-4. convert this data structure to a string (JSON format, but it can be YAML, XML, CSV…)
-```
-Deserialization
-```
-1. Read a string from a file on disk
-2. Convert this string to a data structure using with my_dict = JSON.loads(my_string)
-3. Convert this data structure to instance using with my_instance = MyObject(my_dict)
-```
 
 * A command interpreter to manipulate data without a visual interface, like in a Shell (perfect for development and debugging)
 * A database or files that store data (data = objects)
