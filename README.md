@@ -1,4 +1,6 @@
+<h1 align="center">
 # AirBnB_clone- The console
+</h1>
 
 ![hbnb_logo](https://user-images.githubusercontent.com/69083631/176741018-39fdad26-a09d-4b84-acb9-60a450571814.png)
 
