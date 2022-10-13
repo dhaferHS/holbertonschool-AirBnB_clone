@@ -186,7 +186,7 @@ Accepts multiple keyword arguments as a dictionary
 * All your files should end with a new line
 * The first line of all your files should be exactly `#!/usr/bin/python3`
 * A README.md file, at the root of the folder of the project, is mandatory
-* Your code should use the pycodestyle (version 2.8.*)
+* Your code should use the pycodestyle (version 2.7.*)
 * All your files must be executable
 * The length of your files will be tested using wc
 * All your modules should have a documentation `(python3 -c 'print(__import__("my_module").__doc__)')`
@@ -253,7 +253,7 @@ $
 ```
 All tests should also pass in non-interactive mode: $ echo "python3 -m unittest discover tests" | bash
 
-## STEP 1: The Console
+##  The Console
 ![flowchart_the_console](https://user-images.githubusercontent.com/69083631/176741298-c3505293-486d-4b5d-a31f-b120f9ee8ed3.png)
 
 ### Console : the command interpreter
