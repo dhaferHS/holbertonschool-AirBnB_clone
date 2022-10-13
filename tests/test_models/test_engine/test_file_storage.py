@@ -2,8 +2,8 @@
 """unit tests for FileStorage class"""
 
 import unittest
-from models.engine.file_storage import FileStorage as FileStorage
-from models.base_model import BaseModel as BaseModel
+from models.engine.file_storage import FileStorage
+from models.base_model import BaseModel
 
 
 class FileStorageTests(unittest.TestCase):
