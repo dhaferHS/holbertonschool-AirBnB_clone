@@ -36,12 +36,6 @@ class FileStorageTests(unittest.TestCase):
         key = f'BaseModel.{self.bm1.id}'
         self.assertIsNotNone(self.fs1.all(), {key: self.bm1})
 
-    def test_all(self):
-        """Tests if all() returns a dictionary"""
-
-        storage = FileStorage()
-        self.assertIsInstance(storage.all(), dict)
-
     def test_new(self):
         """Tests if new updates the private dictionary __objects
            accessed with all with a created BaseModel instance"""
