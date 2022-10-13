@@ -292,6 +292,6 @@ city:
 | Review                                      | place_id<br>user_id<br>text           |
 
 ## :couple: About us ##
-This is one of Holberton School tunisia projects was made  in the 9 october 2022!!<br>
+This is one of Holberton School tunisia projects was made  in the 9 october 2022<br>
 If you have a question or a comment, please contact me.<br>
 Dhafer Hamza Sfaxi <5037@holbertonstudents.com>
