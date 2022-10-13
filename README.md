@@ -71,7 +71,7 @@ What is serialize and deserialize a Class?
 ```
 
 1. we can recreate a BaseModel from another one by using a dictionary representation
-2. Convert the dictionary representation to a JSON string in order to reading for us, like humains.
+2. Convert the dictionary representation to a JSON string in order so we can read it like a humain not a pc.
 
 3. Simple Python data structure:
 ```
