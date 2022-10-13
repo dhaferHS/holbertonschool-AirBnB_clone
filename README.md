@@ -253,7 +253,7 @@ $
 ```
 All tests should also pass in non-interactive mode: $ echo "python3 -m unittest discover tests" | bash
 
-##  The Console
+## STEP 2: The Console
 ![flowchart_the_console](https://user-images.githubusercontent.com/69083631/176741298-c3505293-486d-4b5d-a31f-b120f9ee8ed3.png)
 
 ### Console : the command interpreter
@@ -270,11 +270,6 @@ prompt : (hbnb)
 | destroy + class name + id                                   | To delete an object                          |
 | all + class name                                            | To show all the instances of a class         |
 | update + class name + id + attribute name + attribute value | To update the attribute of a class         |
-| class name + "." + all | To show all the instances of a class         |
-| class name + "." + count | To count number of the instances of a class        |
-| class name + "." + show + id | To show the informations of the object        |
-| class name + "." + destroy + id | To delete an object        |
-| class name + "." + update + id + attribute name + attribute value | To update an instance based on his ID |
 
 ### Some examples of the command interpreter
 show:
