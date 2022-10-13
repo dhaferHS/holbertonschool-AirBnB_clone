@@ -18,15 +18,15 @@
 ## Step 1: Write a command interpreter to manage your AirBnB objects
 
  * To implement the parent class "BaseModel".
- * To create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file
+ * To create a simple flow of serialization/deserialization:(the process of turning some object into a data format that can be restored later) Instance <-> Dictionary <-> JSON string <-> file
  * To create all classes used for AirBnB (User, State, City, Place…) that inherit from BaseModel
  * To create the first abstracted storage engine of the project: File storage
- * To create all unittests to validate all our classes and storage engine
+ * To create all unittests to validate all the classes and storage engine
  
 
 ### What’s a command interpreter?
 
- * Create a new object (ex: a new User or a new Place)
+ * Create a new object (ex: a new User or a new State)
  * Retrieve an object from a file, a database etc…
  * Do operations on objects (count, compute stats, etc…)
  * Update attributes of an object
