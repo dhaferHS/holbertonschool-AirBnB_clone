@@ -179,9 +179,6 @@ When we use `**kwargs` as a parameter, we don’t need to know how many argument
 Accepts multiple keyword arguments as a dictionary
 ```
 
-* __How to handle named arguments in a function ?__
-
-
 ## Requirements
 ### Python Scripts
 * Allowed editors: vi, vim, emacs
