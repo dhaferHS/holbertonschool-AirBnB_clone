@@ -15,13 +15,11 @@ from models.city import City
 from models.amenity import Amenity
 
 
-
 """HBNB Command class file"""
 
 
 class HBNBCommand(cmd.Cmd):
     """class HBNBCommand"""
-    
 
     prompt = "(hbnb) "
     classes = ["BaseModel", "User", "State", "City",
@@ -38,7 +36,7 @@ class HBNBCommand(cmd.Cmd):
     def emptyline(self):
         """Empty line command"""
         pass
-    
+
     def do_create(self, arg):
         """Create command that creates a new instance"""
         if not arg:
@@ -85,7 +83,7 @@ class HBNBCommand(cmd.Cmd):
             else:
                 del(new_dict[new_str])
                 storage.save()
-                
+
     def do_all(self, arg):
         """All command prints all string representation of all instances All command with a class prints the string representation of instances of this class"""
         new_list = []
@@ -128,8 +126,8 @@ class HBNBCommand(cmd.Cmd):
                 return
             else:
                 setattr(new_dict[new_str], array[2], array[3])
-                storage.save()            
- 
+                storage.save()
+
+
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
-
