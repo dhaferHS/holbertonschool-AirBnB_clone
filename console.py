@@ -85,7 +85,7 @@ class HBNBCommand(cmd.Cmd):
                 storage.save()
 
     def do_all(self, arg):
-        """All command prints all string representation of all instances All command"""
+        """All command prints all string representation of all instances"""
         new_list = []
         dict_obj = storage.all()
 
