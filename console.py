@@ -67,7 +67,7 @@ class HBNBCommand(cmd.Cmd):
                 print(new_dict[new_str])
 
     def do_destroy(self, arg):
-        """Destroy command deletes an instance based on the class name and id"""
+        """Destroy command deletes instance based on the class name and id"""
         array = arg.split()
         if len(array) < 1:
             print("** class name missing **")
