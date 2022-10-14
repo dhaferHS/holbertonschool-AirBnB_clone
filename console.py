@@ -49,7 +49,7 @@ class HBNBCommand(cmd.Cmd):
             print(new_obj.id)
 
     def do_show(self, arg):
-        """Show command prints the representation of instance class name and id"""
+        """Show command prints representation of instance class name and id"""
         array = arg.split()
 
         if len(array) < 1:
