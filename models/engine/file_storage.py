@@ -2,6 +2,7 @@
 """import modules"""
 import json
 import os
+
 from models.base_model import BaseModel
 from models.user import User
 from models.state import State
@@ -11,19 +12,18 @@ from models.place import Place
 from models.review import Review
 
 
-
 """FileStorage class file"""
 
 
 class FileStorage:
     """class FileStorage"""
-    
+
     __file_path = "file.json"
     __objects = {}
 
     def all(self):
         """returns the dictionary __objects"""
-        
+
         return self.__objects
 
     def new(self, obj):
