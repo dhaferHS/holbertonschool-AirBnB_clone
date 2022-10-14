@@ -10,4 +10,3 @@ class State(BaseModel):
     """class user inherits from basemodel"""
 
     name = ""
-
