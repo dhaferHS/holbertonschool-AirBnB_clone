@@ -11,6 +11,7 @@ import console
 
 class TestHBNBCommand(unittest.TestCase):
     """ Test class HBNBCommand """
+
     def test_class_style(self):
         """Test that  conform to Pycodestyle."""
         style = pycodestyle.StyleGuide(quiet=True)
