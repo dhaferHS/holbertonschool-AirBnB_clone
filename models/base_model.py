@@ -40,7 +40,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """ return a dictionary containing keys and values of dict of instance"""
+        """return a dictionary containing keys and values dict of instance"""
 
         dict = {"__class__": self.__class__.__name__}
         for key, value in self.__dict__.items():
