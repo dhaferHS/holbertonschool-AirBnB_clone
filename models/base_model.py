@@ -41,7 +41,7 @@ class BaseModel:
 
     def to_dict(self):
         """ return a dictionary containing al keys and values of dict of the instance"""
-        
+
         dict = {"__class__": self.__class__.__name__}
         for key, value in self.__dict__.items():
             if key in ["created_at", "updated_at"]:
